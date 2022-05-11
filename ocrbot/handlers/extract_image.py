@@ -13,7 +13,7 @@ def extract_image(update:Update,context:CallbackContext):
     newFile=context.bot.get_file(file_id)
     file_path= newFile.file_path
 
-    keyboard = [[InlineKeyboardButton("English ", callback_data='eng'), InlineKeyboardButton("Russian", callback_data='rus')]]
+    keyboard = [[InlineKeyboardButton("English", callback_data='eng'), InlineKeyboardButton("Русский", callback_data='rus')]]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     m = update.message.reply_text('Выберите язык: ', reply_markup=reply_markup,quote=True)
