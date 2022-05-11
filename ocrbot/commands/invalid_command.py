@@ -7,4 +7,4 @@ def invalid_command(update:Update, context:CallbackContext):
     """
     This function is called when the user enters an invalid command.
     """
-    update.message.reply_text("Invalid command. Type /help for a list of commands.",quote=True)
+    update.message.reply_text("Введена неизвестная команда. Введите /help для отображения списка доступных команд.",quote=True)
