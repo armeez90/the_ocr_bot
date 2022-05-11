@@ -23,6 +23,6 @@ def button_click(update:Update,context:CallbackContext):
             message=data['ParsedResults'][0]['ParsedText']
             query.edit_message_text(f"{message}")
         else:
-            query.edit_message_text(text="⚠️Что-то пошло не так, попробуйте ещё раз ⚠️")
+            query.edit_message_text(text="⚠️ Что-то пошло не так, попробуйте точнее выделить текст для сканирования ⚠️")
     else:
-        query.edit_message_text("Что-то пошло не так, попробуйте ещё раз")
+        query.edit_message_text("Что-то пошло не так, попробуйте точнее выделить текст для сканирования")
