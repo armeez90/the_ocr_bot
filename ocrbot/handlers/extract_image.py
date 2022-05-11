@@ -16,5 +16,5 @@ def extract_image(update:Update,context:CallbackContext):
     keyboard = [[InlineKeyboardButton("English ", callback_data='eng'), InlineKeyboardButton("Russian", callback_data='rus')]]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    m = update.message.reply_text('Select Language : ', reply_markup=reply_markup,quote=True)
+    m = update.message.reply_text('Выберите язык: ', reply_markup=reply_markup,quote=True)
     insert_file_path(chat_id,m.message_id,file_path)
